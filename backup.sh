@@ -15,13 +15,13 @@ backup=$2
 
 #CHECK IF THE SOURCE DIRECTORY EXISTS OR NOT
 if [ ! -d "$source" ];then
-       echo "Error: source directory '$source' does not exist"
-       exit 1
+   echo "Error: source directory '$source' does not exist"
+   exit 1
 fi
 
 #CREATING THE BACKUP DIRECTORY IF IT DOESN'T EXIST
 if [ ! -d "$source" ];then
-      mkdir -p "$backup"
+   mkdir -p "$backup"
 fi
 
 #GENERATING THE TIMESTAMP FOR THE BACKUP FOLDER NAME
